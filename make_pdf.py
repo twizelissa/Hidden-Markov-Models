@@ -172,8 +172,9 @@ def inline_fmt(text):
     text = re.sub(r'\$\$?.+?\$\$?', lambda m: (
         '<font name="Courier" color="#1a1a2e">' + m.group(0).strip('$') + '</font>'
     ), text)
-    # strip markdown links but keep label
-    text = re.sub(r'\[([^\]]+)\]\([^\)]+\)', r'\1', text)
+    # convert markdown links to clickable ReportLab hyperlinks
+    text = re.sub(r'\[([^\]]+)\]\(([^\)]+)\)',
+                  r'<a href="\2" color="#0563C1"><u>\1</u></a>', text)
     return text
 
 def parse_md(md_path):
