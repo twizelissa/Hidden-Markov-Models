@@ -6,6 +6,13 @@
 
 ---
 
+## Links
+
+- **GitHub Repository**: [https://github.com/twizelissa/Hidden-Markov-Models](https://github.com/twizelissa/Hidden-Markov-Models)
+- **Team Contribution Sheet**: [View on Google Sheets](https://docs.google.com/spreadsheets/d/1OSLIDSJeDfIiGMjX6jPt8G1vAx1a6z-l/edit?usp=sharing&ouid=114255793850047564558&rtpof=true&sd=true)
+
+---
+
 ## Overview
 
 This project implements a Hidden Markov Model (HMM) from scratch to classify human physical activities using smartphone inertial measurement unit (IMU) data. Each activity is modelled as a sequence of hidden sub-states, and the Viterbi algorithm is used to decode the most likely state path. Parameters are learned via the Baum-Welch expectation-maximisation algorithm.
