@@ -30,7 +30,7 @@ This project implements a Hidden Markov Model (HMM) from scratch to classify hum
 | Property | Value |
 |---|---|
 | Total recordings | 120 (30 per activity) |
-| Device | iPhone 12 Pro (both members) |
+| Device | iPhone 12 (Elissa), iPhone 12 Pro (Caline), Pixel 3a (Elissa) |
 | Sampling rate | 50 Hz (20 ms interval) |
 | Sensors | Accelerometer (x, y, z) + Gyroscope (x, y, z) |
 | Format | CSV files per session |
@@ -99,7 +99,9 @@ All features are **Z-score normalised** using statistics computed from training 
 |---|---|
 | `HMM_Activity_Recognition.ipynb` | Full implementation — data loading, feature extraction, HMM, evaluation, visualisations |
 | `Data/` | 120 labelled CSV recordings (30 per activity) |
-| `Report.pdf` | 4–5 page project report (see submission) |
+| `Report_Final.pdf` | 5-page project report with figures |
+| `figures/` | Extracted visualisation PNGs used in the report |
+| `Team Task Sheet_[...Team40].xlsx` | Task allocation and meeting log |
 
 ---
 
@@ -127,3 +129,10 @@ All features are **Z-score normalised** using statistics computed from training 
 | GaussianHMM class (Viterbi + Baum-Welch) | Elissa Twizeyimana & Uwingabire Caline |
 | Evaluation, confusion matrix, visualisations | Elissa Twizeyimana & Uwingabire Caline |
 | Report writing | Elissa Twizeyimana & Uwingabire Caline |
+
+---
+
+## Links
+
+- **GitHub Repository**: [https://github.com/twizelissa/Hidden-Markov-Models](https://github.com/twizelissa/Hidden-Markov-Models)
+- **Team Contribution Sheet (Excel/Google Sheets)**: [View on Google Sheets](https://docs.google.com/spreadsheets/d/1OSLIDSJeDfIiGMjX6jPt8G1vAx1a6z-l/edit?usp=sharing&ouid=114255793850047564558&rtpof=true&sd=true)
