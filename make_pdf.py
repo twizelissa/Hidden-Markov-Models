@@ -110,7 +110,7 @@ def embed_image(path, caption=None, max_h_override=None):
     pil = PILImage.open(path)
     w, h = pil.size
     max_w = CONTENT_W
-    max_h = max_h_override if max_h_override else 3.2 * cm
+    max_h = max_h_override if max_h_override else 6.0 * cm
     ratio = min(max_w / w, max_h / h)
     disp_w = w * ratio
     disp_h = h * ratio
@@ -128,7 +128,7 @@ def embed_image_pair(path1, path2, caption1=None, caption2=None):
     """Render two images side by side in a two-column table."""
     items = []
     col_w = (CONTENT_W - 0.3 * cm) / 2
-    max_h = 3.2 * cm
+    max_h = 4.5 * cm
 
     def scale(p):
         if not os.path.exists(p):
@@ -192,8 +192,8 @@ def parse_md(md_path):
             return
         if len(pending_figs) == 1:
             path, cap = pending_figs[0]
-            # transition matrix needs taller slot
-            mh = 5.5 * cm if 'cell_22' in path else 3.2 * cm
+            # transition matrix (2x2 grid) and Viterbi (4-subplot) need taller slot
+            mh = 7.0 * cm if 'cell_22' in path else 5.0 * cm
             story.extend(embed_image(path, cap, max_h_override=mh))
         elif len(pending_figs) == 2:
             (p1, c1), (p2, c2) = pending_figs
